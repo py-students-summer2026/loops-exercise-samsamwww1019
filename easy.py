@@ -23,10 +23,10 @@ def three():
     """
     print("\neasy.three:")
 
-    sum = 0
+    total = 0
     for i in range(1, 101):
-        sum += i
-    print('\t', sum)
+        total += i
+    print('\t', total)
 
 def four():
     """
@@ -46,8 +46,8 @@ def five(number):
     """
     print('\neasy.five:')
 
-    product = number
-    for i in range(number-1, 0, -1):
+    product = 1
+    for i in range(1, number + 1):
         product = product * i
     print('\t', f'{number} factorial = {product}')
 
@@ -59,7 +59,14 @@ def six(target):
 
     second_to_last = 0
     last = 1
-    print('\t', f'fibbonaci up to {target} = {second_to_last}, {last}', end='')
+    print('\t', f'fibonacci up to {target} = ', end='')
+
+    if target >= 0:
+        print(second_to_last, end='')
+
+    if target >= 1:
+        print(f', {last}', end='')
+
     while (last + second_to_last) <= target:
         total = last + second_to_last
         print(f', {total}', end='')
@@ -74,8 +81,10 @@ def seven(text):
     print('\neasy.seven:')
 
     total = 0
-    for character in text:
-        if character in ['a', 'e', 'i', 'o', 'u']:
+    vowels = ['a', 'e', 'i', 'o', 'u']
+
+    for character in text.lower():
+        if character in vowels:
             total += 1
     print('\t', f'# vowels in "{text}" = {total}')
 
@@ -84,6 +93,10 @@ def eight(number):
     Write a program that checks if a given number is prime using a while loop. A prime number is a number greater than 1 that is only evenly divisible by 1 and itself.
     """
     print('\neasy.eight:')
+
+    if number <= 1:
+        print('\t', f'{number} is not prime')
+        return
 
     is_prime = True # assume it's prime
     divisor = number - 1
@@ -124,4 +137,3 @@ def ten(text):
         print(text[i], end='')
         i -= 1
     print('"') # end quote and line break
-

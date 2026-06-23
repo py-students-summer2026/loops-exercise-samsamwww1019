@@ -14,6 +14,17 @@ def do_easy():
     # easy.eight(24)
     # easy.nine()
     # easy.ten('circumlocution')
+
+    easy.one()
+    easy.two()
+    easy.three()
+    easy.four()
+    easy.five(10)
+    easy.six(8)
+    easy.seven('circumlocution')
+    easy.eight(24)
+    easy.nine()
+    easy.ten('circumlocution')
     pass # do nothing
 
 def do_medium():
@@ -28,6 +39,17 @@ def do_medium():
     # medium.eight(24)
     # medium.nine()
     # medium.ten()
+
+    medium.one([4, 8, 2, 10, 6])
+    medium.two([4, 8, 2, 10, 6])
+    medium.three('racecar')
+    medium.four(2, 2, 10)
+    medium.five([4, 8, 2, 10, 6])
+    medium.six(8)
+    medium.seven(49)
+    medium.eight()
+    medium.nine('Hello, world! This is Python.')
+    medium.ten([1, 2, 3, 4, 5], [3, 4, 5, 6, 7])
     pass # do nothing
 
 def do_difficult():
@@ -42,6 +64,17 @@ def do_difficult():
     # difficult.eight(24)
     # difficult.nine()
     # difficult.ten()
+
+    difficult.one(12)
+    difficult.two(8)
+    difficult.three('listen', 'silent')
+    difficult.four(2, 2, 10)
+    difficult.five([5, 2, 9, 1, 7])
+    difficult.six(6)
+    difficult.seven(12345)
+    difficult.eight('The quick brown fox jumps over the lazy dog')
+    difficult.nine('The quick brown fox jumps over the lazy dog')
+    difficult.ten()
     pass # do nothing
 
 def main():
